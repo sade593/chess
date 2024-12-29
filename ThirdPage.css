@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.left-header {
+    background-color: rgb(156, 0, 156);
+    color: white;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.right-header {
+    background-color: white;
+    color: black;
+    width: 50%;
+    text-align: left;
+    font-size: 0.8rem;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-weight: lighter;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.main {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.left-panel {
+    background-image: url('https://s3-alpha-sig.figma.com/img/419f/0ab9/f629662c685be9f8f2304f2eece28921?Expires=1736121600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kpgz7ErsDI53jQP6iLIH9lyEqgV6oEDGTmrEXc87U8xWf4eDebIAW5-bIO3e1ahTFmn26LHsxKmE2eK3Pmq5G6oZQqWqwXuJk~0BPmbAEo9legs6JguXnXoblMFJIV0F7o8vYYHiJbSx42DHrDTJeuiCh3z2LrTH2lhTOXv~sKEVzHNqyJp1pd6NURQb4SqaPR06VBEw-G8Z5fp8uj0ageQhAK8e3jscXkmR3NkNDW1mT-UQ3X656DhiKON3cD8rDWXJ3okv2~zgcFCbspgWtVkHLIGPp9zW~lBHM5BO-V3MbEEd2rQewSKutSpmrEoo5syPHCaxqbrgj9R8H3DZig__');
+    background-size: cover;
+    background-position: center;
+    color: #333;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 4rem;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.quote {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin: 0;
+}
+
+.author {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.right-panel {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.form-section {
+    margin-bottom: 2rem;
+}
+
+.form-section h2 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+select, input[type="radio"] {
+    margin-bottom: 1rem;
+}
+
+.radio-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.progress {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.progress div {
+    font-weight: bold;
+}
