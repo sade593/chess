@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Experience Form</title>
+    <link rel="stylesheet" href="style3.css"> <!-- Link to the external CSS file -->
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="left-header">
+                <h1>Redberry Knight Cup</h1>
+            </div>
+            <div class="right-header">
+                <h1>Chess Tournament</h1>
+            </div>
+        </div>
+        <div class="main">
+            <div class="left-panel">
+                <div class="quote">"Many have become chess masters; no one has become the master of chess."</div>
+                <div class="author">- Siegbert Tarrasch</div>
+            </div>
+            <div class="right-panel">
+                <div class="progress">
+                    <div>Chess Experience</div>
+                    <div>Personal Information</div>
+                </div>
+                <form>
+                    <!-- Chess Experience Section -->
+                    <div class="form-section">
+                        <h2>Chess Experience</h2>
+                        <label for="knowledge-level">Level of Knowledge</label>
+                        <select id="knowledge-level" name="knowledge-level" required>
+                            <option value="">Select...</option>
+                            <option value="beginner">Beginner</option>
+                            <option value="intermediate">Intermediate</option>
+                            <option value="advanced">Advanced</option>
+                        </select>
+
+                        <label for="character">Choose Your Character</label>
+                        <select id="character" name="character" required>
+                            <option value="">Select...</option>
+                            <option value="Magnus Carlsen">Magnus Carlsen</option>
+                            <option value="queen">Wilheim Steinitz</option>
+                            <option value="king">Bobby Fischer</option>
+                        </select>
+                    </div>
+
+                    <!-- Personal Information Section -->
+                    <div class="form-section">
+                        <h2>Personal Information</h2>
+                        <label>Have you participated in the Redberry Championship?</label>
+                        <div class="radio-group">
+                            <input type="radio" id="yes" name="redberry" value="yes" required>
+                            <label for="yes">Yes</label>
+                            <input type="radio" id="no" name="redberry" value="no" required>
+                            <label for="no">No</label>
+                        </div>
+                    </div>
+
+                    <!-- Buttons -->
+                    <div class="button-group">
+                        <button type="button" onclick="window.location.href='chess3.html';">Back</button>
+
+                        
+                        <a href="chess4.html">
+                            <button type="button">Done</button>
+                          </a>
+                          
+                          
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
