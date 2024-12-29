@@ -1,0 +1,172 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Container Flex Layout for headers */
+.container {
+  display: flex;
+  width: 100%;
+}
+
+/* Header Styling */
+.header, .header2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  width: 50%; 
+}
+
+.header {
+  background-color: #6A1B9A; /* Purple color */
+  color: white;
+  width:50%;
+}
+
+.header2 {
+  background-color: #f0f0f0; /* Light grey */
+  color: black;
+  justify-content: flex-start;
+  width:50%;
+}
+.onboarding-header {
+  margin: 0;
+  width: 50%;
+  text-align: right;
+  font-size: 1rem;
+  color: black;
+  background-color: white; /* Set a different background color */
+}
+
+/* Main Content Layout */
+.main-content {
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 80px); /* Adjust the height */
+}
+
+/* Left Section with Image */
+.left-section {
+  width: 50%;
+  background: url('https://s3-alpha-sig.figma.com/img/ee29/9d23/9dc6ebaf181b38ab7319c87dba0f1d1c?Expires=1736121600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=i-lHn9NRlj6WqgFtzq~Cexd3XGX5sPIyMN3cCMbC5FWa235NKAzjWVyUY3GAp0f6KCy3en3XOp~IBKQ~fyZLKGIDvpQDTk-PoHu~6RxJlu8Ko3rIw90mdjUsgJ2kRje0HfaAh0z8Wbh7qsPbZ6SH2GNLKxzQ3475VJ3wFLKcXpnID2Ux5wyRaUNCSLZlwGUawb4bko8lzI7vFojnKweZnN1s8oe-KkzCo-4LWcJ0uCouE5x26Pr3vnTiQ1vQ3HcnaDbPSjVNXI7DAZAP57KW2MkBF5Mez99SLZKh-Tnc2QWbDkQpVcqr1Ejc9dUpG0CF6IJd0GumtHwoZqTYzS1kRA__') no-repeat center center/cover;
+  position: relative;
+}
+
+/* Text Overlay */
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Right Section with Form */
+.right-section {
+  width: 50%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Form Elements */
+form label {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  display: block;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.back-button {
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 2px solid #000;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.next-button {
+  padding: 10px 20px;
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Squares Above the Form */
+.squares-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+.square-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left:10px;
+}
+
+.square {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 5px;
+  border-radius: 5px; /* Round corners */
+}
+
+.white {
+  background-color: white;
+  border: 2px solid #ccc;
+}
+
+.grey {
+  background-color: #d3d3d3;
+  border: 2px solid #ccc;
+}
+
+.line {
+  width: 40px;
+  height: 2px;
+  background-color: #ccc;
+}
+
+.label {
+  font-size: 0.9rem;
+  color: #333;
+  text-align: center;
+}
+.P{
+  color:grey;
+}
